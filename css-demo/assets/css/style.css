@@ -1,10 +1,7 @@
-/* 
-
-Stylesheet for CSS demo
-
-*/
+/**** Stylesheet for CSS demo ****/
 
 /* ----- Box Sizing ----- */
+
 html {
     box-sizing: border-box;
     padding: 0;
@@ -17,6 +14,16 @@ html {
 }
 
 /* ----- Global Styles ----- */
+
+/**********************************
+    Font
+        body: Smooch Sans, sans-serif
+
+    Color Scheme 
+        
+        header.primary: #ffbaa3
+        header.primary nav ul li a: #f55a00
+**********************************/
 
 body {
     font-family: 'Smooch Sans', sans-serif;
@@ -46,10 +53,6 @@ header.primary h2 {
     margin: 20px auto 40px;
 }
 
-header.primary nav {
-
-}
-
 header.primary nav ul {
     /* This gets rid of the default padding for the list */
     padding: 0;
@@ -62,8 +65,12 @@ header.primary nav ul li {
 header.primary nav ul li a {
     color: #ffffff;
     text-decoration: none;
-    background-color: brown;
+    background-color: #f55a00;
     padding: 8px 16px;
     margin-bottom: 1rem;
     display: inline-block;
+}
+
+section, aside {
+    padding: 0 1%;
 }
