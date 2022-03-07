@@ -18,8 +18,16 @@ html {
 .container {
     width: 80vw;
     margin: 60px auto;
+    max-width: 1000px;
 }
 
+img {
+    max-width: 100%;
+}
+
+p {
+    font-size: 1.2rem;
+}
 
 /* ----- Global Styles ----- */
 
@@ -30,6 +38,7 @@ html {
     Color Scheme 
         header.primary: #ffbaa3
         header.primary nav ul li a: #f55a00
+        #intro h2: #8A73FF
 **********************************/
 
 body {
@@ -97,16 +106,102 @@ header.primary nav ul li a:hover {
 
 #intro {
     border-bottom: 4px dotted #c0c0c0;
-    padding-bottom: 1.2rem;
 }
 
 #intro h2 {
-    font-size: 1.8rem;
+    font-size: 2.0rem;
+    color: #8A73FF;
     border-bottom: 4px dotted #c0c0c0;
     padding-bottom: 1.2rem;
 }
  
+#content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
+#content article.post {
+    background-color: #ffffff;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0,0,0, 0.7);
+    padding: 2%;
+    border-radius: 10px;
+}
+
+#content article.post:hover {
+    box-shadow:0 10px 20px rgba(0,0,0, 0.7);
+    transition: 0.7s;
+}
+
+time.post-date {
+    text-transform: uppercase;
+}
+
+.post figure {
+    margin: 0;
+}
+
+.post img {
+    border: 1px solid #c0c0c0;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.post a {
+    color: #8A73FF;
+}
+
+.post a:hover {
+    text-decoration: none;
+    color:rgba(245,90,0, 1);
+    transition: 0.4s;
+}
+
+aside[role="complementary"] {
+    background-color: #FC8C2D;
+    color: #ffffff;
+    padding: 1.5rem;
+}
+
+aside div.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+aside article.widget {
+    width: 43%;
+}
+
+article.widget a {
+    color: #ffffff;
+    display: block;
+    margin-top: 1rem;
+    text-align: end;
+}
+
+article.widget a:hover {
+    color: #000000;
+    transition: 0.7s;
+}
+
+article.widget footer {
+    display: none;
+}
+
+#colophon {
+    background-color: #3b638b;
+}
+
+#colophon h6{
+    padding:20px;
+    margin:0;
+    text-align:center;
+    color:#fff;
+    font-size:.8rem;
+    text-transform:uppercase;
+}
 
 
 @media screen and (max-width:600px) {
