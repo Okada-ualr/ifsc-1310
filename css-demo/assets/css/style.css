@@ -25,6 +25,15 @@ img {
     max-width: 100%;
 }
 
+.img-right {
+    float: right;
+    margin-left: 20px;
+}
+
+h2 {
+    font-size: 2.0rem;
+}
+
 p {
     font-size: 1.2rem;
 }
@@ -109,7 +118,6 @@ header.primary nav ul li a:hover {
 }
 
 #intro h2 {
-    font-size: 2.0rem;
     color: #8A73FF;
     border-bottom: 4px dotted #c0c0c0;
     padding-bottom: 1.2rem;
@@ -203,6 +211,68 @@ article.widget footer {
     text-transform:uppercase;
 }
 
+#additional-elements h2 {
+    color: #8A73FF;
+    border-bottom: 4px dotted #c0c0c0;
+    padding-bottom: 1.2rem;
+}
+
+#additional-elements h3 {
+    border-left: 10px solid #3b638b;
+    padding: 5px 8px;
+}
+
+#additional-elements a {
+    color: #;
+}
+
+#additional-elements a:hover {
+    text-decoration: none;
+    color:rgba(245,90,0, 1);
+    transition: 0.4s;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #c0c0c0;
+    border-collapse: collapse;
+    font-size: 1.2rem;
+    background: #fff;
+}
+
+table caption {
+    color: #8A73FF;
+    padding: 10px;
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(0,0,0, 0.1);
+}
+
+tr:hover {
+    background-color: rgba(0,0,0, 0.3);
+}
+
+th {
+    background:#FC8C2D;
+    padding: 10px;
+    
+}
+
+td {
+    border: 1px solid #c0c0c0;
+    padding:5px;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd + dt {
+    margin-top: 1rem;
+}
 
 @media screen and (max-width:600px) {
     header.primary nav ul {
