@@ -23,6 +23,8 @@ html {
 
 img {
     max-width: 100%;
+    border: 0.5px solid #808080;
+    padding: 5px;
 }
 
 .img-right {
@@ -32,6 +34,17 @@ img {
 
 h2 {
     font-size: 2.0rem;
+    color: #8A73FF;
+}
+
+h3 {
+    font-size: 1.4rem;
+    color: #1C68A6;
+}
+
+h4 {
+    font-size: 1.3rem;
+    color: #064b0b;
 }
 
 p {
@@ -47,7 +60,7 @@ p {
     Color Scheme 
         header.primary: #ffbaa3
         header.primary nav ul li a: #f55a00
-        #intro h2: #8A73FF
+        body h2: #8A73FF
 **********************************/
 
 body {
@@ -79,6 +92,7 @@ header.primary h1 a {
 header.primary h2 {
     font-size: 1.5rem;
     margin: 20px auto 40px;
+    color: #ffffff;
 }
 
 header.primary nav {
@@ -119,7 +133,6 @@ header.primary nav ul li a:hover {
 }
 
 #intro h2 {
-    color: #8A73FF;
     border-bottom: 4px dotted #c0c0c0;
     padding-bottom: 1.2rem;
 }
@@ -128,6 +141,7 @@ header.primary nav ul li a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #content article.post {
@@ -152,8 +166,6 @@ time.post-date {
 }
 
 .post img {
-    border: 1px solid #c0c0c0;
-    padding: 5px;
     margin: 5px 0;
 }
 
@@ -165,6 +177,92 @@ time.post-date {
     text-decoration: none;
     color:rgba(245,90,0, 1);
     transition: 0.4s;
+}
+
+#additional-elements h2 {
+    
+    border-bottom: 4px dotted #c0c0c0;
+    padding-bottom: 1.2rem;
+}
+
+#additional-elements h3 {
+    border-left: 10px solid #3b638b;
+    padding: 5px 8px;
+    clear: right;
+    margin-top: 5%;
+}
+
+#additional-elements a {
+    color: #8A73FF;
+}
+
+#additional-elements a:hover {
+    text-decoration: none;
+    color:rgba(245,90,0, 1);
+    transition: 0.4s;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #c0c0c0;
+    border-collapse: collapse;
+    font-size: 1.2rem;
+    background: #fff;
+    margin-bottom: 5%;
+}
+
+table caption {
+    color: #8A73FF;
+    padding: 10px;
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(0,0,0, 0.1);
+}
+
+tr:hover {
+    background-color: rgba(0,0,0, 0.3);
+}
+
+th {
+    background:#FC8C2D;
+    padding: 10px;
+}
+
+td {
+    border: 1px solid #c0c0c0;
+    padding:5px;
+}
+
+#additional-elements li, #additional-elements dl {
+    font-size: 1.2rem;
+}
+
+#additional-elements dt {
+    font-weight: bolder;
+}
+
+dd + dt {
+    margin-top: 1rem;
+}
+
+#additional-elements blockquote {
+    width: 90%;
+    margin: auto;
+    background-color: #c0c0c0;
+    padding: 4% 2%;
+    border: 3px dotted #0c36aa;
+    border-radius: 20px;
+    font-size: 1.2rem;
+}
+
+#additional-elements cite {
+    display: block;
+    text-align: right;
+    margin-top: 5%;
+    font-size: 1rem;
 }
 
 aside[role="complementary"] {
@@ -181,6 +279,10 @@ aside div.container {
 
 aside article.widget {
     width: 43%;
+}
+
+article.widget h2 {
+    color: #ffffff;
 }
 
 article.widget a {
@@ -212,70 +314,24 @@ article.widget footer {
     text-transform:uppercase;
 }
 
-#additional-elements h2 {
-    color: #8A73FF;
-    border-bottom: 4px dotted #c0c0c0;
-    padding-bottom: 1.2rem;
-}
 
-#additional-elements h3 {
-    border-left: 10px solid #3b638b;
-    padding: 5px 8px;
-}
+@media screen and (max-width:970px) {
+    #content {
+        flex-direction: column;
+        align-items: center;
+    }
 
-#additional-elements a {
-    color: #8A73FF;
-}
-
-#additional-elements a:hover {
-    text-decoration: none;
-    color:rgba(245,90,0, 1);
-    transition: 0.4s;
-}
-
-table {
-    width: 100%;
-    border: 1px solid #c0c0c0;
-    border-collapse: collapse;
-    font-size: 1.2rem;
-    background: #fff;
-}
-
-table caption {
-    color: #8A73FF;
-    padding: 10px;
-    font-size: 1.4rem;
-    font-weight: bolder;
-}
-
-tr:nth-child(even) {
-    background-color: rgba(0,0,0, 0.1);
-}
-
-tr:hover {
-    background-color: rgba(0,0,0, 0.3);
-}
-
-th {
-    background:#FC8C2D;
-    padding: 10px;
-    
-}
-
-td {
-    border: 1px solid #c0c0c0;
-    padding:5px;
-}
-
-dt {
-    font-weight: bold;
-}
-
-dd + dt {
-    margin-top: 1rem;
+    #content article.post {
+        width: 80%;
+        margin: 5% 0;
+    }
 }
 
 @media screen and (max-width:600px) {
+    html {
+        font-size: 14px;
+    }
+
     header.primary nav ul {
         flex-direction: column;
     }
