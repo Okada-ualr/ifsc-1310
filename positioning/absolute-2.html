@@ -27,23 +27,44 @@ body {
 	border-bottom-style: solid;
 	border-left-style: solid;
 	width: 800px;
+	height: 800px;
 	margin-right: auto;
 	margin-left: auto;
+	margin-bottom: 100px;
+
+	position: relative;
 }
+
+#red, #green, #blue, #purple, #footer {
+	width: 180px;
+	height: 180px;
+	position: absolute;
+}
+
 #red {
 	background-color: #900;
+	top: 0;
+	left: 0;
 }
 #green {
 	background-color: #090;
+	top: 0;
+	right: 0;
 }
 #blue {
 	background-color: #00F;
+	bottom: 0;
+	left: 0;
 }
 #purple {
 	background-color: #63C;
+	bottom: 0;
+	right: 0;
 }
 #footer {
 	background-color: #666;
+	top: 310px;
+	left: 310px;
 }
 h1 {
 	color: #000;
