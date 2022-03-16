@@ -14,7 +14,7 @@ html {
 }
 
 
-/* ----- Utility Classes ----- */
+/* ----- Global Styles ----- */
 
 body {
     background-color: #ccc9d3;
@@ -54,8 +54,6 @@ a:hover {
     transition: 0.5s;
 }
 
-/* ----- Global Styles ----- */
-
 header.primary {
     background-color: #203e57;
     min-height: 130px;
@@ -71,7 +69,7 @@ header.primary {
 li.subsection span{
     display:inline-block;
     font-size: 1.7rem;
-    margin-top: 2rem;
+    margin-top: 2vw;
     font-weight: bolder;
     color: #203e57;
 }
