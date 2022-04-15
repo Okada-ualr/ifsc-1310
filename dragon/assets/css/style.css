@@ -1,0 +1,23 @@
+/**** Stylesheet for SpaceX Dragon ****/
+
+/* ----- Box Sizing ----- */
+
+html {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* ----- Utility Classes ----- */
+
+
+/* ----- Global Styles ----- */
+
+body {
+    font-family: 'Lora', serif;
+}
