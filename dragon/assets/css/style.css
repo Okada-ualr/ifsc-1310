@@ -16,11 +16,8 @@ html {
 /* ----- Utility Classes ----- */
 
 .container {
-    width: 80vw;
-}
-
-img {
-    max-width: 100vw;
+    width: 95vw;
+    margin: auto;
 }
 
 /* ----- Global Styles ----- */
@@ -28,11 +25,14 @@ img {
 body {
     font-family: 'Lora', serif;
     margin: 0;
+    color: #ffffff;
+    background-image: url("../img/space.jpeg");
+    background-size: contain;
+    background-attachment: fixed;
 }
 
 header.primary {
     padding: 1em 2em;
-    color: #ffffff;
     text-shadow: 1px 2px #000000;
     position: relative;
     min-height: 650px;
@@ -91,7 +91,7 @@ header.primary nav a {
     color: #ffffff;
     font-weight: bolder;
     padding: 0.5rem 1.5rem;
-    background-color: rgba(106, 98, 98, 0.6);
+    background-color: rgba(101, 101, 101, 0.5);
     margin-left: 2rem;
     border-radius: 0.7rem;
 }
@@ -109,5 +109,46 @@ header.primary h2 {
 
 header.primary h3 {
     position: relative;
+    font-size: 1.3rem;
+}
+
+
+/* ----- Intro ----- */
+
+section#intro {
+    padding: 10vw 0;
+}
+
+#intro div.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#intro img {
+    width: 50%;
+}
+
+#intro div.container div {
+    width: 40%;
+    padding-right: 3%;
+}
+
+#intro h2 {
+    font-size: 2.2rem;
+}
+
+#intro p {
+    font-size: 1.2rem;
+    margin-top: 0.3rem;
+}
+
+
+/* ----- Articles ----- */
+
+#articles h2 {
+    font-size:  2.2rem;
+    text-align: center;
 }
 
