@@ -49,7 +49,9 @@ header.primary {
     padding: 1em 2em;
     text-shadow: 1px 2px #000000;
     position: relative;
-    min-height: 650px;
+    /* min-height: 650px; */
+    width: 100vw;
+    height: 50vw;
 }
 
 header.primary::before {
@@ -166,7 +168,7 @@ section#articles {
     margin: 10vw 0;
 }
 
-#articles h2 {
+#articles > h2 {
     font-size:  2.2rem;
     text-align: center;
     font-family: 'Bebas Neue', cursive;
@@ -207,7 +209,9 @@ section#articles {
 }
 
 #articles article.post h2{
+    text-align: center;
     font-size: 1.8rem;
+    font-family: 'Bebas Neue', cursive;
     color: #0d3ea0;
     text-decoration: underline;
 }
