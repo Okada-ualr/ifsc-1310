@@ -20,6 +20,13 @@ html {
     margin: auto;
 }
 
+/* ----- Responsive Image ----- */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* ----- Global Styles ----- */
 
 body {
@@ -27,7 +34,7 @@ body {
     margin: 0;
     color: #ffffff;
     background-image: url("../img/space.jpeg");
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
 }
 
@@ -116,7 +123,7 @@ header.primary h3 {
 /* ----- Intro ----- */
 
 section#intro {
-    padding: 10vw 0;
+    margin: 10vw 0;
 }
 
 #intro div.container {
@@ -137,6 +144,7 @@ section#intro {
 
 #intro h2 {
     font-size: 2.2rem;
+    font-family: 'Bebas Neue', cursive;
 }
 
 #intro p {
@@ -147,8 +155,65 @@ section#intro {
 
 /* ----- Articles ----- */
 
+section#articles {
+    margin: 10vw 0;
+}
+
 #articles h2 {
     font-size:  2.2rem;
     text-align: center;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#articles .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#articles article.post {
+    width: 30%;
+    background-color: #e2e2e2;
+    color: #000000;
+    border-radius: 1rem;
+    padding: 1%;
+}
+
+#articles article.post figure {
+    margin: 0;
+    transition: 0.7s;
+}
+
+#articles article.post:hover figure {
+    margin: -1%;
+    transition: 0.7s;
+}
+
+#articles article.post figcaption {
+    color: #747474;
+}
+
+#articles article.post img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+#articles article.post h2{
+    font-size: 1.8rem;
+    color: #0d3ea0;
+    text-decoration: underline;
+}
+
+#articles article.post h3{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#articles article.post ul {
+    margin-top: 2rem;
+}
+
+#articles article.post ul li {
+    margin-bottom: 1.3rem;
 }
 
