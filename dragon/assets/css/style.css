@@ -356,3 +356,12 @@ footer#colophon {
     padding-bottom: 1%;
     margin: 2vw auto;
 }
+
+#colophon h6 a {
+    color: #ffffff;
+}
+
+#colophon h6 a:hover {
+    color: #3950ff;
+    transition: 0.8s;
+}
