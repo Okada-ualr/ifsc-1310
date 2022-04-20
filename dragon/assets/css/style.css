@@ -141,7 +141,6 @@ section#intro {
     align-items: center;
 }
 
-
 #intro img {
     width: 50%;
 }
@@ -159,6 +158,59 @@ section#intro {
 #intro p {
     font-size: 1.2rem;
     margin-top: 0.3rem;
+}
+
+
+/* ----- Content ------ */
+section#content {
+    margin: 10vw 0;
+}
+
+section#content div.container {
+    width: 80vw;
+}
+
+#content h2 {
+    font-size: 3.2rem;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    color: #58a5e9;
+    margin-bottom: 5%;
+}
+
+#content p {
+    font-size: 1.3rem;
+}
+
+#content table {
+    margin: 10vw auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#content table caption {
+    font-size: 2.2rem;
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 5%;
+}
+
+#content table thead {
+    background-color: #0f1249;
+    font-size: 1.3rem;
+    text-align: left;
+}
+
+#content table tbody tr {
+    color: #000000;
+    background-color: #d4d4d4;
+}
+
+#content table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+#content table td, #content table th {
+    padding: 2%;
 }
 
 
