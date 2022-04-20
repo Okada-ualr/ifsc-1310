@@ -178,6 +178,11 @@ section#content div.container {
     margin-bottom: 5%;
 }
 
+#content h3 {
+    font-size: 1.8rem;
+    margin-top: 5%;
+}
+
 #content p {
     font-size: 1.3rem;
 }
