@@ -162,12 +162,13 @@ section#intro {
 
 
 /* ----- Content ------ */
+
 section#content {
     margin: 10vw 0;
 }
 
 section#content div.container {
-    width: 80vw;
+    width: 70vw;
 }
 
 #content h2 {
@@ -216,6 +217,14 @@ section#content div.container {
 
 #content table td, #content table th {
     padding: 2%;
+}
+
+
+/* ----- Contact Form ------ */
+
+#contact-form {
+    width: 70%;
+    margin: auto;
 }
 
 
