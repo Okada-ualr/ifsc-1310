@@ -1,0 +1,376 @@
+/**** Stylesheet for SpaceX Dragon ****/
+
+/* ----- Box Sizing ----- */
+
+html {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* ----- Utility Classes ----- */
+
+.container {
+    width: 95vw;
+    margin: auto;
+}
+
+img.img-center {
+    display: block;
+    border: 1px solid #8a8a8a;
+    padding: 0.5%;
+    margin: auto;
+}
+
+/* ----- Responsive Image ----- */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ----- Global Styles ----- */
+
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    color: #ffffff;
+    background-image: url("../img/space.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header.primary {
+    padding: 1em 2em;
+    text-shadow: 1px 2px #000000;
+    position: relative;
+    /* min-height: 650px; */
+    width: 100vw;
+    height: 50vw;
+}
+
+header.primary::before {
+    content: "";
+    background-image: url("../img/dragoncrew.8k.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.9;
+}
+
+header.primary h1 {
+    margin: 0;
+    position: relative;
+    display: inline;
+}
+
+header.primary h1 a{
+    position: relative;
+    background-image: url("../img/SpaceX-Logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 25vw;
+    display: inline-block;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+header.primary nav {
+    float: right;
+    position: relative;
+    margin-top: 0.5vw;
+}
+
+header.primary nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+header.primary nav li{
+    list-style-type: none;
+}
+
+header.primary nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bolder;
+    padding: 0.5rem 1.5rem;
+    background-color: rgba(101, 101, 101, 0.5);
+    margin-left: 2rem;
+    border-radius: 0.7rem;
+}
+
+header.primary nav a:hover {
+    background-color: rgba(106, 98, 98, 0.9);
+    transition: 0.7s;
+}
+
+header.primary h2 {
+    position: relative;
+    margin-top: 10%;
+    font-size: 3rem;
+}
+
+header.primary h3 {
+    position: relative;
+    font-size: 1.3rem;
+}
+
+
+/* ----- Intro ----- */
+
+section#intro {
+    margin: 10vw 0;
+}
+
+#intro div.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#intro img {
+    width: 50%;
+}
+
+#intro div.container div {
+    width: 40%;
+    padding-right: 3%;
+}
+
+#intro h2 {
+    font-size: 2.2rem;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#intro p {
+    font-size: 1.2rem;
+    margin-top: 0.3rem;
+}
+
+
+/* ----- Content ------ */
+
+section#content {
+    margin: 10vw 0;
+}
+
+section#content div.container {
+    width: 70vw;
+}
+
+#content h2 {
+    font-size: 3.2rem;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    color: #58a5e9;
+    margin-bottom: 5%;
+}
+
+#content h3 {
+    font-size: 1.8rem;
+    margin-top: 5%;
+}
+
+#content p {
+    font-size: 1.3rem;
+}
+
+#content table {
+    margin: 10vw auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#content table caption {
+    font-size: 2.2rem;
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 5%;
+}
+
+#content table thead {
+    background-color: #0f1249;
+    font-size: 1.3rem;
+    text-align: left;
+}
+
+#content table tbody tr {
+    color: #000000;
+    background-color: #d4d4d4;
+}
+
+#content table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+#content table td, #content table th {
+    padding: 2%;
+}
+
+
+/* ----- Contact Form ------ */
+
+#contact-form {
+    width: 70%;
+    margin: auto;
+}
+
+
+/* ----- Articles ----- */
+
+section#articles {
+    margin: 10vw 0;
+}
+
+#articles > h2 {
+    font-size:  2.2rem;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 4vw;
+}
+
+#articles div.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#articles article.post {
+    width: 30%;
+    background-color: #e2e2e2;
+    color: #000000;
+    border-radius: 1rem;
+    padding: 1%;
+}
+
+#articles article.post figure {
+    margin: 0;
+    transition: 0.7s;
+}
+
+#articles article.post:hover figure {
+    margin: -1%;
+    transition: 0.7s;
+}
+
+#articles article.post figcaption {
+    color: #747474;
+}
+
+#articles article.post img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+#articles article.post h2{
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Bebas Neue', cursive;
+    color: #0d3ea0;
+    text-decoration: underline;
+}
+
+#articles article.post h3{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#articles article.post ul {
+    margin-top: 2rem;
+}
+
+#articles article.post ul li {
+    margin-bottom: 1.3rem;
+}
+
+
+/* ----- Slideshow ----- */
+
+section#slideshow {
+    margin: 10vw auto;
+}
+
+#slideshow h2 {
+    font-size: 2.2rem;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    margin-bottom: 4vw;
+}
+
+#slideshow img {
+    width: 80%;
+}
+
+
+/* ----- Aside ----- */
+
+aside div.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+aside div.container article.widget {
+    width: 40%;
+}
+
+article.widget h2 {
+    font-size: 1.8rem;
+    font-family: 'Bebas Neue', cursive;
+}
+
+article.widget p {
+    font-size: 1.2rem;
+}
+
+article.widget table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+article.widget table td {
+    border-bottom: 1px solid #ffffff;
+    padding: 2% 0;
+}
+
+article.widget table td:nth-child(even) {
+    text-align: right;
+}
+
+
+/* ----- Footer ----- */
+
+footer#colophon {
+    margin-top: 5vw;
+}
+
+#colophon h6 {
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    width: 60%;
+    border-bottom: 1px solid #8a8a8a;
+    padding-bottom: 1%;
+    margin: 2vw auto;
+}
+
+#colophon h6 a {
+    color: #ffffff;
+}
+
+#colophon h6 a:hover {
+    color: #3950ff;
+    transition: 0.8s;
+}
