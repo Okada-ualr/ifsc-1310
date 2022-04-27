@@ -42,8 +42,12 @@ header.primary {
 }
 
 header.primary h1 {
-    font-size: 2.3rem;
+    font-size: 2.5rem;
 }
+
+header.primary h2 {
+    font-size: 1.4rem;
+} 
 
 
 /* ---------- Projects ---------- */
@@ -52,15 +56,15 @@ header.primary h1 {
     font-size: 1.2rem;
 }
 
-a {
+#projects a {
     display: inline-block;
     padding: 0.5rem;
     color: #ffffff;
 }
 
-a:hover {
+#projects a:hover {
     color: #9da2e6;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 li.subsection {
@@ -91,4 +95,14 @@ article.post:nth-child(even) h2 {
 
 #articles p {
     font-size: 1.3rem;
+}
+
+#articles a {
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+#articles a:hover {
+    color: #fdddaf;
+    transition: 0.5s;
 }
