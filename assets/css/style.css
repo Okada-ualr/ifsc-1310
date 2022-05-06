@@ -93,8 +93,22 @@ article.post:nth-child(even) h2 {
     margin-top: 5vw;
 }
 
-#articles p {
+#articles h3 {
+    font-size: 1.4rem;
+    text-decoration: underline;
+}
+
+#articles p, dt, dd {
     font-size: 1.3rem;
+}
+
+#articles dt {
+    padding-left: 0.7rem;
+    border-left: 15px solid #61959f;
+}
+
+#articles dd {
+    padding: 1.5rem 0;
 }
 
 #articles a {

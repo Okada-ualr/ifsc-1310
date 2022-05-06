@@ -5,6 +5,7 @@
 html {
     box-sizing: border-box;
     padding: 0;
+    overflow-x: hidden;
 }
 
 *,
@@ -27,12 +28,14 @@ img.img-center {
     margin: auto;
 }
 
+
 /* ----- Responsive Image ----- */
 
 img {
     max-width: 100%;
     height: auto;
 }
+
 
 /* ----- Global Styles ----- */
 
@@ -117,6 +120,16 @@ header.primary nav a:hover {
     transition: 0.7s;
 }
 
+a#viewing {
+    background-color: rgba(87, 121, 144, 0.7);
+    border: 1px solid #ffffff;
+}
+
+a#viewing:hover {
+    background-color: rgba(87, 121, 144, 0.9);
+    transition: 0.7s;
+}
+
 header.primary h2 {
     position: relative;
     margin-top: 10%;
@@ -179,11 +192,6 @@ section#content div.container {
     margin-bottom: 5%;
 }
 
-#content h3 {
-    font-size: 1.8rem;
-    margin-top: 5%;
-}
-
 #content p {
     font-size: 1.3rem;
 }
@@ -191,32 +199,68 @@ section#content div.container {
 #content table {
     margin: 10vw auto;
     border-collapse: collapse;
+    text-align: center;
     width: 100%;
 }
 
 #content table caption {
     font-size: 2.2rem;
     font-family: 'Bebas Neue', cursive;
-    margin-bottom: 5%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 8%;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 1rem;
+    width: 70%;
 }
 
 #content table thead {
-    background-color: #0f1249;
-    font-size: 1.3rem;
-    text-align: left;
+    background-color: #051535;
+    font-size: 1.5rem;
+    font-family: 'Bebas Neue', cursive;
+    white-space: nowrap;
 }
 
 #content table tbody tr {
-    color: #000000;
-    background-color: #d4d4d4;
+    color: #ffffff;
+    background-color: #858383;;
 }
 
 #content table tbody tr:nth-child(even) {
-    background-color: #ffffff;
+    background-color: #5a5a5a;
 }
+#content table thead tr > th, #content table tbody tr > td {
+    padding-left: 4%;
+    padding-right: 0;
+} 
 
 #content table td, #content table th {
+    padding: 4% 1%;
+}
+
+
+/* ----- FAQ List --------- */
+.faqList h3 {
+    margin: 0;
+    margin-top: 5%;
+    font-size: 1.5rem;
     padding: 2%;
+    background-color: rgba(110, 110, 110, 0.5);
+    transition: 0.7s;
+}
+
+.faqList h3:hover {
+    cursor: pointer;
+    background-color: rgba(110, 110, 110, 0.8);
+    transition: 0.7s;
+    font-size: 1.6rem;
+}
+
+.faqList p {
+    margin: 0;
+    padding: 2% 4%;
+    background-color: #c7c7c7;
+    color: #051535;
 }
 
 
@@ -249,7 +293,7 @@ section#articles {
 
 #articles article.post {
     width: 30%;
-    background-color: #e2e2e2;
+    background-color: #ffffff;
     color: #000000;
     border-radius: 1rem;
     padding: 1%;
@@ -300,6 +344,7 @@ section#articles {
 
 section#slideshow {
     margin: 10vw auto;
+    width: 70vw;
 }
 
 #slideshow h2 {
@@ -313,6 +358,27 @@ section#slideshow {
     width: 80%;
 }
 
+/* Customize Previous/Next/Dots/Autoplay */
+
+.slick-autoplay-toggle-button,
+.slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
+.slick-dots li button .slick-dot-icon,
+.slick-dots li.slick-active button .slick-dot-icon {
+  color: white;
+}
+
+/* Customize Previous/Next/Dots/Autoplay - Active State */
+
+.slick-next:focus .slick-next-icon,
+.slick-next:focus .slick-prev-icon,
+.slick-prev:focus .slick-next-icon,
+.slick-prev:focus .slick-prev-icon,
+.slick-dots li button:focus .slick-dot-icon:before,
+.slick-dots li.slick-active button:focus .slick-dot-icon,
+.slick-autoplay-toggle-button:focus 
+{
+    color:rgb(91, 86, 188);
+}
 
 /* ----- Aside ----- */
 
@@ -364,6 +430,7 @@ footer#colophon {
     border-bottom: 1px solid #8a8a8a;
     padding-bottom: 1%;
     margin: 2vw auto;
+    white-space: pre;
 }
 
 #colophon h6 a {
