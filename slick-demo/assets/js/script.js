@@ -1,13 +1,13 @@
 $(document).ready(function() {
 
-    $('.fade2').slick({
-      dots: true,
-      infinite: true,
-      speed: 500,
-      fade: true,
-      slide: 'div',
+    $('.fade').slick({
+      centerMode: true,
+      centerPadding: '0px',
+      slidesToShow: 3,
+      slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 2000
+      autoplaySpeed: 2000,
+      dots: true
     });
     
 });
